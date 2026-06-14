@@ -19,47 +19,46 @@ function useScrollReveal(selector = '.fade-up') {
 const services = [
   {
     icon: '🌐',
-    title: 'Website Development',
-    desc: 'Fast, modern websites built with cutting-edge tech — from portfolios to full-stack platforms.',
+    title: 'Custom Web Development',
+    desc: 'We build complete, high-performance websites from scratch, handling both responsive front-end design and secure back-end systems.',
     color: '#eef0ff',
   },
   {
     icon: '✨',
-    title: 'Branding & Logo Design',
-    desc: 'Memorable identities that make your brand stand out from the very first impression.',
+    title: 'Brand Naming & Logo Design',
+    desc: 'We provide creative brand name suggestions and design premium, memorable logos to capture your unique business identity.',
     color: '#f5f0ff',
   },
   {
     icon: '📱',
-    title: 'Social Media Design',
-    desc: 'Eye-catching creatives for Instagram, Facebook & LinkedIn that drive real engagement.',
+    title: 'E-commerce Setup',
+    desc: 'We build secure, fully functional e-commerce platforms designed to showcase your products and drive online sales.',
     color: '#e8f4ff',
   },
   {
     icon: '📦',
-    title: 'Product Image Editing',
-    desc: 'Premium Amazon & Flipkart listing images — white backgrounds, enhanced & conversion-ready.',
+    title: 'AI & Product Image Editing',
+    desc: 'We create clean, white-background listing photos and use advanced AI to generate realistic model-wearing shots for your products.',
     color: '#fff0f6',
   },
   {
     icon: '🎬',
-    title: 'Video Editing',
-    desc: 'Promotional videos, reels & brand films that tell your story and convert viewers to clients.',
+    title: 'AI Video Generation',
+    desc: 'Send us a standard product photo, and we will use cutting-edge AI to transform it into a stunning, dynamic promotional video.',
     color: '#fffbeb',
   },
   {
     icon: '🎨',
     title: 'Business Identity Design',
-    desc: 'Visiting cards, letterheads & brand stationery that make every touchpoint premium.',
+    desc: 'We design professional visiting cards, letterheads, and brand stationery to give your business a cohesive, premium look.',
     color: '#f0fff4',
   },
 ]
 
 const stats = [
-  { value: '150+', label: 'Projects Delivered' },
-  { value: '80+', label: 'Happy Clients' },
-  { value: '2', label: 'Countries Served' },
-  { value: '5★', label: 'Client Rating' },
+  { value: '100%', label: 'Custom Designs' },
+  { value: '1-on-1', label: 'Client Support' },
+  { value: 'Global', label: 'Client Reach' },
 ]
 
 const testimonials = [
@@ -89,23 +88,23 @@ const testimonials = [
 const whyUs = [
   {
     icon: '🚀',
-    title: 'Fast Turnaround',
-    desc: 'We move quickly without compromising quality. Most projects delivered ahead of schedule.',
+    title: 'Fast & Flawless Execution',
+    desc: 'We move quickly without compromising on clean code or design quality. Your project stays on track and on time.',
   },
   {
     icon: '💡',
-    title: 'Creative Excellence',
-    desc: 'Every design decision is intentional — built to convert visitors into paying customers.',
+    title: 'Built From Scratch',
+    desc: 'No generic templates here. Every website and brand identity is custom-crafted to make your business stand out globally.',
   },
   {
     icon: '🤝',
-    title: 'Dedicated Support',
-    desc: 'We\'re available via WhatsApp 6 days a week. You\'ll never be left waiting for answers.',
+    title: 'Direct Founder Access',
+    desc: 'Skip the agency middlemen. You work directly with us, ensuring crystal-clear communication and fast answers when you need them.',
   },
   {
     icon: '💰',
     title: 'Transparent Pricing',
-    desc: 'No hidden fees, no surprise invoices. Clear packages for every budget, big or small.',
+    desc: 'No hidden fees or surprise invoices. We provide clear, honest project quotes tailored to your startup or small business budget.',
   },
 ]
 
@@ -125,15 +124,15 @@ function Home() {
         <div className="container">
           <div className={styles.heroContent}>
             <div className={`${styles.heroBadge} fade-up`}>
-              <span className="badge">🌍 Serving India & Dubai</span>
+              <span className="badge">🌍 SERVING CLIENTS WORLDWIDE</span>
             </div>
             <h1 className={`${styles.heroTitle} fade-up`}>
-              We Build Brands, Websites &{' '}
-              <span className="gradient-text">Digital Experiences</span>
-              {' '}That Grow Businesses
+              Elevating {' '}
+              <span className="gradient-text">Small Businesses</span>
+              {' '}With Custom Websites & Branding.
             </h1>
             <p className={`${styles.heroSub} fade-up`}>
-              Full-service digital creative agency — from stunning websites and logos to Amazon product images and promotional videos. Your vision, elevated.
+              A full-service digital agency helping small businesses, startups, and local brands stand out online. From custom web development to complete digital branding, we transform your ideas into modern, high-performing digital experiences. Your vision, elevated.
             </p>
             <div className={`${styles.heroCtas} fade-up`}>
               <Link to="/contact" className="btn-primary">
@@ -199,9 +198,9 @@ function Home() {
           <div className={styles.whyInner}>
             <div className={`${styles.whyLeft} fade-up`}>
               <span className="badge">Why Digily Studio</span>
-              <h2>The Agency That <span className="gradient-text">Actually Delivers</span></h2>
+              <h2>The Studio That <span className="gradient-text">Actually Delivers</span></h2>
               <p>
-                We've worked with startups, D2C brands, and established businesses across India and Dubai. What sets us apart isn't just design — it's strategy, speed, and genuine care for your growth.
+                We partner with startups, small businesses, and growing brands worldwide. What sets us apart isn't just clean code or beautiful design — it's our direct approach, fast execution, and genuine care for your digital growth.
               </p>
               <Link to="/about" className="btn-primary" style={{ marginTop: '8px' }}>
                 Our Story <ArrowRight />
@@ -368,26 +367,27 @@ function HeroIllustration() {
 
         {/* Card 3: Product */}
         <rect x="36" y="210" width="80" height="70" rx="8" fill="url(#grad3)" opacity="0.8" />
-        <text x="76" y="250" textAnchor="middle" fill="white" fontSize="20">📦</text>
+        <text x="76" y="250" textAnchor="middle" fill="white" fontSize="20">🎬</text>
         <rect x="126" y="215" width="78" height="7" rx="3" fill="#e8eaff" />
         <rect x="126" y="230" width="60" height="6" rx="3" fill="#f0f2ff" />
         <rect x="126" y="248" width="78" height="6" rx="3" fill="#f0f2ff" />
         <rect x="126" y="264" width="50" height="6" rx="3" fill="#f0f2ff" />
 
+
         {/* Card 4: Video + Social */}
         <rect x="276" y="164" width="168" height="90" rx="10" fill="url(#grad4)" opacity="0.85" />
-        <text x="360" y="215" textAnchor="middle" fill="white" fontSize="28">🎬</text>
-        <text x="360" y="240" textAnchor="middle" fill="rgba(255,255,255,0.9)" fontSize="10" fontFamily="Inter" fontWeight="600">Promo Video Ready</text>
+        <text x="360" y="215" textAnchor="middle" fill="white" fontSize="28">📦</text>
+        <text x="360" y="240" textAnchor="middle" fill="rgba(255,255,255,0.9)" fontSize="10" fontFamily="Inter" fontWeight="600">E-commerce Setup 🛍️</text>
 
         <rect x="276" y="270" width="168" height="30" rx="8" fill="#fff8f0" />
-        <text x="360" y="289" textAnchor="middle" fill="#d97706" fontSize="10" fontFamily="Inter" fontWeight="600">Social Media Pack ★★★★★</text>
+        <text x="360" y="289" textAnchor="middle" fill="#d97706" fontSize="10" fontFamily="Inter" fontWeight="600">Payment Gateway Setup ★★★★★</text>
 
         {/* Floating badges */}
         <rect x="160" y="10" width="80" height="26" rx="13" fill="url(#grad1)" />
-        <text x="200" y="27" textAnchor="middle" fill="white" fontSize="10" fontFamily="Inter" fontWeight="600">India 🇮🇳</text>
+        <text x="200" y="27" textAnchor="middle" fill="white" fontSize="10" fontFamily="Inter" fontWeight="600">Startups 🚀</text>
 
         <rect x="350" y="330" width="86" height="26" rx="13" fill="url(#grad2)" />
-        <text x="393" y="347" textAnchor="middle" fill="white" fontSize="10" fontFamily="Inter" fontWeight="600">Dubai 🇦🇪</text>
+        <text x="393" y="347" textAnchor="middle" fill="white" fontSize="10" fontFamily="Inter" fontWeight="600">Local Brands 🏪</text>
 
         <defs>
           <filter id="shadow1" x="-10%" y="-10%" width="120%" height="120%">

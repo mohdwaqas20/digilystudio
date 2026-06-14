@@ -214,25 +214,20 @@ const whyChooseUs = [
 
 const stats = [
   {
-    value: '150+',
-    label: 'Projects Delivered',
-    desc: 'Across all disciplines and industries',
+    value: '100%',
+    label: 'Custom Designs',
+    desc: 'Fully responsive and tailored to your brand',
   },
   {
-    value: '80+',
-    label: 'Happy Clients',
-    desc: 'In India, UAE, and beyond',
+    value: '1-on-1',
+    label: 'Client Support',
+    desc: 'Direct communication and dedicated attention',
   },
   {
-    value: '2',
-    label: 'Countries Served',
-    desc: 'India and Dubai with same premium quality',
-  },
-  {
-    value: '5★',
-    label: 'Client Rating',
-    desc: 'Across all platforms and reviews',
-  },
+    value: 'Global',
+    label: 'Client Reach',
+    desc: 'Serving startups and businesses worldwide',
+  }
 ]
 
 const processSteps = [

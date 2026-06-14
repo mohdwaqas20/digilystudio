@@ -14,89 +14,90 @@ function useScrollReveal() {
   }, [])
 }
 
+
 const services = [
   {
     id: 'web',
-    icon: '🌐',
-    title: 'Website Development',
+    icon: '💻',
+    title: 'Custom Web Development',
     tagline: 'Fast. Modern. Built to Convert.',
-    description: 'We craft high-performance websites using the latest frontend and backend technologies. From single-page portfolios to complex e-commerce platforms — we build digital homes your brand deserves.',
+    description: 'We build complete, high-performance websites from scratch, handling both responsive front-end design and secure back-end systems.',
     benefits: [
       'Mobile-first, fully responsive layouts',
-      'SEO-optimized structure from day one',
-      'Fast loading speeds (Core Web Vitals compliant)',
-      'CMS integration for easy content management',
-      'Secure, scalable backend architecture',
+      'Clean, efficient frontend code',
+      'Fast loading speeds for better retention',
+      'Secure and scalable backend architecture',
+      'Custom database integration',
     ],
-    useCases: ['Business portfolios', 'E-commerce stores', 'SaaS landing pages', 'Corporate websites'],
+    useCases: ['Business Portfolios', 'Startup Landing Pages', 'E-commerce Websites', 'Custom Websites'],
     color: '#eef0ff',
     accent: '#6366f1',
   },
   {
     id: 'branding',
     icon: '✨',
-    title: 'Branding & Logo Design',
-    tagline: 'Identity That Speaks Before You Do.',
-    description: 'Your logo is the face of your business. We create memorable brand identities that communicate your values, attract your ideal customers, and position you as the premium choice in your market.',
+    title: 'Brand Naming & Logo Design',
+    tagline: 'Memorable. Unique. Built for You.',
+    description: 'We provide creative brand name suggestions and design premium, memorable logos to capture your unique business identity.',
     benefits: [
-      'Multiple logo concepts and iterations',
-      'Full brand guidelines document',
-      'Color palette and typography system',
-      'Scalable vector files (SVG, AI, EPS)',
-      'Light & dark mode variants',
+      'Creative brand name brainstorming',
+      'Multiple unique logo concepts',
+      'High-resolution vector files included',
+      'Color palette & typography selection',
+      'Full commercial ownership rights',
     ],
-    useCases: ['New business launches', 'Brand refresh/rebrand', 'Startup identity', 'D2C product brands'],
+    useCases: ['New business launches', 'Startup branding', 'Company rebrands', 'Product line identities'],
     color: '#f5f0ff',
     accent: '#8b5cf6',
   },
   {
-    id: 'social',
-    icon: '📱',
-    title: 'Social Media & Canva Designs',
-    tagline: 'Stop the Scroll. Start the Conversation.',
-    description: 'We design complete social media packs — posts, stories, reels covers, and highlight icons — that make your brand instantly recognizable and build audience trust at scale.',
+    id: 'social', // ID kept exactly as 'social' so your CSS/design doesn't break!
+    icon: '🛒',
+    title: 'E-commerce Setup',
+    tagline: 'Secure. Scalable. Ready to Sell.',
+    description: 'We build secure, fully functional e-commerce platforms designed to showcase your products and drive online sales.',
     benefits: [
-      'Platform-optimized sizing for all channels',
-      'Editable Canva templates delivered',
-      'Consistent brand voice across all assets',
-      'Monthly content calendar planning',
-      'Instagram, Facebook, LinkedIn, YouTube covers',
+      'Secure payment gateway integration',
+      'User-friendly product management dashboard',
+      'Optimized, frictionless checkout experience',
+      'Mobile-ready shopping interfaces',
+      'Order and inventory tracking setup',
     ],
-    useCases: ['Brand launch campaigns', 'Product promotions', 'Festival/seasonal posts', 'Ongoing content needs'],
+    useCases: ['Clothing Brands', 'Digital Stores', 'B2B Wholesale', 'Local Shops'],
     color: '#e8f4ff',
     accent: '#0ea5e9',
   },
   {
     id: 'product',
     icon: '📦',
-    title: 'Product Image Editing (Amazon / Flipkart)',
-    tagline: 'Images That Sell On Their Own.',
-    description: 'Premium e-commerce listing images with clean white backgrounds, lifestyle mockups, and infographic-style images that highlight your product\'s best features and drive conversions on Amazon and Flipkart.',
+    title: 'AI & Product Image Editing',
+    tagline: 'Crisp. Realistic. Market-Ready.',
+    description: 'We create clean, white-background listing photos and use advanced AI to generate realistic model-wearing shots for your products.',
     benefits: [
-      'Pure white background (marketplace compliant)',
-      'High-resolution output (2000x2000px+)',
-      'Lifestyle mockup compositions',
-      'Feature highlight infographics',
-      'Bulk order discounts available',
+      'Clean white background extraction',
+      'AI-generated realistic human models',
+      'Color correction and lighting enhancement',
+      'Marketplace-ready formatting (Amazon/Flipkart)',
+      'High-conversion visual appeal',
     ],
-    useCases: ['Amazon Seller Central', 'Flipkart listings', 'Meesho products', 'D2C website galleries'],
+    useCases: ['E-commerce product pages', 'Amazon/Flipkart listings', 'Apparel lookbooks', 'Social media showcases'],
     color: '#fff0f6',
     accent: '#ec4899',
   },
   {
     id: 'video',
-    icon: '🎬',
-    title: 'Video Editing & Promotions',
-    tagline: 'Content That Moves People (and the Algorithm).',
-    description: 'From 30-second Instagram reels to full-length promotional brand films — we edit, color grade, and add motion graphics to video content that captivates your audience and drives action.',
+    icon: '🪄',
+    title: 'AI Video Generation',
+    tagline: 'Dynamic. Engaging. Scroll-Stopping.',
+    description: 'Send us a standard product photo, and we will use cutting-edge AI to transform it into a stunning, dynamic promotional video.',
     benefits: [
-      'Professional color grading & correction',
-      'Animated text & motion graphics',
-      'Background music & sound design',
-      'Subtitles & captions included',
-      'Social & YouTube optimized exports',
+      'Transform static images into fluid motion',
+      'High-quality cinematic rendering',
+      'Perfect formatting for social media reels',
+      'No expensive video shoots required',
+      'Fast turnaround times for campaigns',
     ],
-    useCases: ['Product launch videos', 'Brand story films', 'Instagram/YouTube reels', 'Ad creatives'],
+    useCases: ['Instagram Reels & TikToks', 'Product launch teasers', 'Website hero backgrounds', 'Digital ad campaigns'],
     color: '#fffbeb',
     accent: '#f59e0b',
   },
@@ -104,21 +105,20 @@ const services = [
     id: 'identity',
     icon: '🎨',
     title: 'Business Identity Design',
-    tagline: 'Make Every Touchpoint Premium.',
-    description: 'Business cards, letterheads, envelopes, email signatures — all the physical and digital stationery that ensures your brand looks polished and professional at every client interaction.',
+    tagline: 'Professional. Cohesive. Premium.',
+    description: 'We design professional visiting cards, letterheads, and brand stationery to give your business a cohesive, premium look.',
     benefits: [
-      'Double-sided visiting card design',
-      'Print-ready files (300 DPI CMYK)',
-      'Letterhead & envelope design',
-      'Email signature HTML template',
-      'Brand merchandise concepts',
+      'Custom visiting card designs',
+      'Professional letterhead formatting',
+      'Cohesive brand stationery sets',
+      'Print-ready file delivery',
+      'Consistent visual identity across physical media',
     ],
-    useCases: ['Client-facing professionals', 'Corporate offices', 'Startups & SMBs', 'Freelancers & consultants'],
+    useCases: ['Networking events', 'Client presentations', 'Corporate communications', 'Physical retail packaging'],
     color: '#f0fff4',
     accent: '#22c55e',
   },
 ]
-
 function Services() {
   useScrollReveal()
 
@@ -130,11 +130,11 @@ function Services() {
           <div className={`${styles.heroContent} fade-up`}>
             <span className="badge">Our Services</span>
             <h1>
-              Everything Your Brand Needs to{' '}
-              <span className="gradient-text">Thrive Online</span>
+              Custom Digital Solutions for{' '}
+              <span className="gradient-text">Growing Brands</span>
             </h1>
             <p>
-              One studio, six disciplines. We handle every creative need under one roof — so your brand stays consistent, beautiful, and growth-ready.
+              From your very first logo to a fully custom web platform. We provide the essential design, development, and digital services your business needs to succeed under one roof.
             </p>
           </div>
         </div>
