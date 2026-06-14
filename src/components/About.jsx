@@ -25,11 +25,11 @@ function About() {
           <div className={`${styles.heroContent} fade-up`}>
             <span className="badge">About Digily Studio</span>
             <h1>
-              We Are A <span className="gradient-text">Digital Creative</span> Agency<br />
-              Built for Scale & Excellence
+              Your Worldwide<span className="gradient-text">Digital Partner</span> <br />
+
             </h1>
             <p>
-              Founded in 2022, Digily Studio has grown into one of India's most trusted creative studios, serving ambitious brands across India and Dubai. Our mission? To make premium digital creativity accessible to every business, regardless of size.
+              Founded in 2026, Digily Studio brings premium digital experiences to clients across the globe. Our mission is to equip startups and established businesses with the custom design, development, and AI visuals needed to stand out on the world stage.
             </p>
           </div>
         </div>
@@ -46,7 +46,7 @@ function About() {
               </div>
               <h3>Our Mission</h3>
               <p>
-                To empower businesses with world-class creative solutions that aren't just beautiful — but built to convert, scale, and drive real business results. We believe great design is the secret weapon of growing brands.
+                To empower businesses worldwide with high-end digital solutions that aren't just beautiful — but built to convert and scale. We believe that custom code and premium design are the secret weapons of growing brands.
               </p>
             </div>
 
@@ -57,7 +57,7 @@ function About() {
               </div>
               <h3>Our Vision</h3>
               <p>
-                To be the go-to creative partner for ambitious brands across South Asia and the Middle East. A studio where creativity meets strategy, and every project moves the business needle.
+                To be the premier digital partner for ambitious brands across the globe. A worldwide studio where modern web technology meets strategic creativity, ensuring every project drives tangible business growth.
               </p>
             </div>
 
@@ -68,9 +68,9 @@ function About() {
               </div>
               <h3>Our Values</h3>
               <p>
-                <strong>Speed:</strong> Fast turnaround without compromise.<br/>
-                <strong>Quality:</strong> Premium execution on every pixel.<br/>
-                <strong>Honesty:</strong> Transparent communication, always.
+                <strong>Speed:</strong> Fast, flawless execution without compromise.<br />
+                <strong>Excellence:</strong> Premium design and clean code on every pixel.<br />
+                <strong>Honesty:</strong> Transparent pricing and direct communication.
               </p>
             </div>
           </div>
@@ -174,7 +174,7 @@ function About() {
             <p>Ready to transform your brand? Let's talk about what makes your business special.</p>
             <div className={styles.ctaBtns}>
               <Link to="/contact" className="btn-primary">Start Your Project</Link>
-              <a href="https://wa.me/919999999999" target="_blank" rel="noopener noreferrer" className="btn-whatsapp">
+              <a href="https://wa.me/919984090593" target="_blank" rel="noopener noreferrer" className="btn-whatsapp">
                 💬 WhatsApp Us
               </a>
             </div>
@@ -187,28 +187,28 @@ function About() {
 
 const whyChooseUs = [
   {
-    title: 'Multi-Disciplinary Expertise',
-    desc: 'Web design, branding, video, product imaging, social media — one studio, endless possibilities. No juggling multiple vendors.',
+    title: 'All-In-One Digital Studio',
+    desc: 'Custom web development, premium branding, and AI product videos all under one roof. No need to manage multiple freelancers.',
   },
   {
-    title: 'Fast Turnaround Without Compromise',
-    desc: 'Most projects delivered ahead of schedule. We\'ve built processes to move quickly while maintaining premium quality.',
+    title: 'Fast & High-Quality Work',
+    desc: 'We move quickly to launch your project on time, without ever compromising on clean code or premium design aesthetics.',
   },
   {
-    title: 'Results-Driven Approach',
-    desc: 'Every design decision is intentional. We don\'t just make things pretty — we build for conversions and business growth.',
+    title: 'Built for Business Growth',
+    desc: 'Whether it is a luxury e-commerce store or a corporate B2B portal, we build platforms that actually drive sales and attract clients.',
   },
   {
-    title: 'Accessible Pricing for Every Budget',
-    desc: 'Startup-friendly rates without the startup-quality feeling. Premium creative solutions that won\'t break the bank.',
+    title: 'Honest & Clear Pricing',
+    desc: 'Premium digital solutions designed for startups and growing businesses. No hidden fees, just clear and upfront project pricing.',
   },
   {
-    title: '6-Day WhatsApp Support',
-    desc: 'We\'re here when you need us. Direct communication, quick response times, no corporate runaround.',
+    title: 'Direct WhatsApp Support',
+    desc: 'Skip the agency middlemen. You communicate directly with us via WhatsApp for fast updates and crystal-clear communication.',
   },
   {
-    title: 'Proven Track Record',
-    desc: '150+ projects, 80+ happy clients, 5★ ratings. We\'ve delivered for e-commerce, SaaS, D2C, and corporate brands.',
+    title: 'Modern Tech & AI Powered',
+    desc: 'We use the latest web technologies (like React) and cutting-edge AI video tools to keep your brand steps ahead of the competition.',
   },
 ]
 
@@ -229,59 +229,39 @@ const stats = [
     desc: 'Serving startups and businesses worldwide',
   }
 ]
-
 const processSteps = [
   {
-    title: 'Discovery & Strategy',
-    desc: 'We dive deep into your brand, goals, and target audience to craft a strategic direction.',
+    title: 'Discovery & Planning',
+    desc: 'We start with a direct consultation to understand your business goals, target audience, and exactly what you need built.',
   },
   {
-    title: 'Conceptualization',
-    desc: 'Creative brainstorming and ideation to develop multiple concepts for your consideration.',
+    title: 'Design & UI/UX',
+    desc: 'We craft premium brand identities and modern website layouts, ensuring the visual direction aligns perfectly with your vision.',
   },
   {
-    title: 'Design & Production',
-    desc: 'Our designers and developers bring concepts to life with pixel-perfect execution.',
+    title: 'Development & Production',
+    desc: 'From writing clean custom code for your web platform to generating dynamic AI product videos, we bring the designs to life.',
   },
   {
-    title: 'Feedback & Refinement',
-    desc: 'Your input matters. We iterate based on your feedback until you\'re thrilled.',
+    title: 'Review & Refinement',
+    desc: 'We share the functional website or video drafts with you. We iterate directly based on your feedback until the final result is flawless.',
   },
   {
-    title: 'Final Delivery',
-    desc: 'All files, assets, documentation, and guidelines delivered ready for deployment.',
+    title: 'Launch & Deployment',
+    desc: 'We handle the technical setup, connect your domains, and officially launch your new e-commerce store, B2B portal, or digital campaign.',
   },
   {
     title: 'Ongoing Support',
-    desc: 'We\'re here for tweaks, updates, and future projects. Your success doesn\'t end at launch.',
+    desc: 'Even after going live, we are just a message away for any tweaks, platform updates, or future digital projects your business needs.',
   },
 ]
 
 const teamMembers = [
   {
-    name: 'Arjun Singh',
-    avatar: '👨‍💼',
-    role: 'Founder & Creative Director',
-    bio: '10+ years in digital design. Passionate about building brands that people love.',
-  },
-  {
-    name: 'Priya Sharma',
-    avatar: '👩‍🎨',
-    role: 'Lead Designer',
-    bio: 'Award-winning brand designer. Specializes in creating identities that resonate.',
-  },
-  {
-    name: 'Vikram Patel',
+    name: 'Mohd Waqas',
     avatar: '👨‍💻',
-    role: 'Full-Stack Developer',
-    bio: 'React & Node.js expert. Turns designs into blazing-fast, conversion-optimized websites.',
-  },
-  {
-    name: 'Sneha Gupta',
-    avatar: '🎬',
-    role: 'Video & Motion Designer',
-    bio: 'Creates cinematic content that tells your brand story and drives engagement.',
-  },
+    role: 'Founder & Full-Stack Developer',
+    bio: 'Dubai-based developer and creative director. Specializes in building high-performance e-commerce platforms, B2B portals, and premium brand identities.',
+  }
 ]
-
 export default About

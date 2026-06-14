@@ -63,24 +63,24 @@ const stats = [
 
 const testimonials = [
   {
-    name: 'Arjun Mehta',
-    role: 'Founder, StyleKart India',
-    text: 'Digily Studio transformed our Amazon listings completely. Sales jumped 40% within a month of uploading the new product images. Absolutely professional work!',
-    avatar: 'AM',
+    name: 'Praveen',
+    role: 'Co-Founder, Leezoo',
+    text: 'Digily Studio brought our luxury streetwear brand to life. The custom e-commerce website they built is incredibly fast, clean, and perfectly captures our premium aesthetic. Outstanding web development work!',
+    avatar: 'PR',
     rating: 5,
   },
   {
-    name: 'Sara Al-Rashid',
-    role: 'CEO, Bloom Events Dubai',
-    text: 'They designed our entire brand identity — logo, website, and social media templates. The team understood our vision perfectly and delivered beyond expectations.',
-    avatar: 'SA',
+    name: 'Ali Imran',
+    role: 'Operations, Ayat Exims',
+    text: 'We needed a professional B2B portal to help us connect with international clients, and they delivered exactly that. The corporate website is polished, responsive, and positions our manufacturing business perfectly.',
+    avatar: 'AI',
     rating: 5,
   },
   {
-    name: 'Priya Nair',
-    role: 'Director, Nair & Co.',
-    text: 'The website they built for us is stunning and loads super fast. We\'ve been getting compliments from clients daily. Highly recommend Digily Studio!',
-    avatar: 'PN',
+    name: 'Vishal',
+    role: 'Co-Founder, Leezoo',
+    text: 'The AI promotional videos and brand identity design gave our product launch a massive boost. They turned our flat product photos into dynamic, high-end content that looks amazing on our social media.',
+    avatar: 'VI', // You can change this to their initials
     rating: 5,
   },
 ]
@@ -243,6 +243,18 @@ function Home() {
                 <div className={styles.portfolioInfo}>
                   <h4>{item.title}</h4>
                   <p>{item.sub}</p>
+                  {item.link && (
+                    <div className={styles.portfolioBtnWrap}>
+                      <a
+                        href={item.link}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className={styles.portfolioActionBtn}
+                      >
+                        View Project <span className={styles.btnArrow}>→</span>
+                      </a>
+                    </div>
+                  )}
                 </div>
               </div>
             ))}
@@ -301,7 +313,7 @@ function Home() {
               <Link to="/contact" className={styles.ctaBtnWhite}>
                 Get a Free Quote <ArrowRight />
               </Link>
-              <a href="https://wa.me/919999999999" target="_blank" rel="noopener noreferrer" className="btn-whatsapp">
+              <a href="https://wa.me/919984090593" target="_blank" rel="noopener noreferrer" className="btn-whatsapp">
                 <WhatsAppSmall /> Chat on WhatsApp
               </a>
             </div>
@@ -312,14 +324,33 @@ function Home() {
   )
 }
 
-/* ---- Portfolio Items ---- */
+
 const portfolioItems = [
-  { title: 'StyleKart E-Commerce', sub: 'Website Development', tag: 'Web', emoji: '🛍️', bg: 'linear-gradient(135deg, #eef0ff, #ddd6fe)' },
-  { title: 'Bloom Events Brand', sub: 'Logo & Identity Design', tag: 'Branding', emoji: '🌸', bg: 'linear-gradient(135deg, #fff0f6, #fce7f3)' },
-  { title: 'FreshHarvest Listings', sub: 'Amazon Product Images', tag: 'Product', emoji: '🥗', bg: 'linear-gradient(135deg, #f0fff4, #d1fae5)' },
-  { title: 'TechFlow Promo Reel', sub: 'Video Editing', tag: 'Video', emoji: '🎬', bg: 'linear-gradient(135deg, #fffbeb, #fef3c7)' },
-  { title: 'Luminary Skincare', sub: 'Social Media Pack', tag: 'Design', emoji: '✨', bg: 'linear-gradient(135deg, #f5f0ff, #ede9fe)' },
-  { title: 'Nexus Consulting', sub: 'Business Identity Design', tag: 'Branding', emoji: '💼', bg: 'linear-gradient(135deg, #e8f4ff, #dbeafe)' },
+  { 
+    title: 'Leezoo E-Commerce', 
+    sub: 'Custom Web Development', 
+    tag: 'Web', 
+    emoji: '🛒', 
+    bg: 'linear-gradient(135deg, #eef0ff, #ddd6fe)',
+    link: 'https://www.leezoo.in',
+  },
+  { 
+    title: 'Product Promotional Video', 
+    sub: 'AI Video Generation', 
+    tag: 'Video', 
+    emoji: '🎬', 
+    bg: 'linear-gradient(135deg, #fffbeb, #fef3c7)',
+    link: 'https://www.instagram.com/reel/DZKcuYgvRA5/?igsh=MXcxdzA5NDM5eTl0bw==',
+  },
+  { 
+    title: 'Leezoo Luxury Streetwear', 
+    sub: 'Brand Identity & Aesthetic', 
+    tag: 'Branding', 
+    emoji: '✨', 
+    bg: 'linear-gradient(135deg, #fff0f6, #fce7f3)',
+    link: 'https://www.leezoo.in',
+  },
+  
 ]
 
 /* ---- Icons ---- */

@@ -60,14 +60,14 @@ function Contact() {
             {/* Contact Info */}
             <div className={`${styles.contactInfo} fade-up`}>
               <h2>Contact Information</h2>
-              <p>Feel free to reach out to us using any of these methods. We typically respond within 2-4 hours.</p>
+              <p>Feel free to reach out using any of these methods. I typically respond within 2-4 hours.</p>
 
               <div className={styles.infoCard}>
                 <div className={styles.infoIcon}>✉️</div>
                 <div>
                   <h4>Email</h4>
                   <a href="mailto:info.digilystudio@gmail.com">info.digilystudio@gmail.com</a>
-                  <p>We'll get back to you within 24 hours</p>
+                  <p>I'll get back to you within 24 hours</p>
                 </div>
               </div>
 
@@ -75,17 +75,17 @@ function Contact() {
                 <div className={styles.infoIcon}>💬</div>
                 <div>
                   <h4>WhatsApp</h4>
-                  <a href="https://wa.me/919999999999" target="_blank" rel="noopener noreferrer">+91 9999 999 999</a>
-                  <p>Chat with us directly - we love quick conversations</p>
+                  <a href="https://wa.me/919984090593" target="_blank" rel="noopener noreferrer">+91 99840 90593</a>
+                  <p>Chat directly with the founder for quick responses</p>
                 </div>
               </div>
 
               <div className={styles.infoCard}>
                 <div className={styles.infoIcon}>📍</div>
                 <div>
-                  <h4>Our Locations</h4>
-                  <p><strong>India:</strong> Based in New Delhi</p>
-                  <p><strong>UAE:</strong> Serving Dubai & Abu Dhabi</p>
+                  <h4>Workspace</h4>
+                  <p><strong>Based in Dubai, UAE</strong></p>
+                  <p>Operating 100% Remotely & Serving Clients Worldwide</p>
                 </div>
               </div>
 
@@ -93,17 +93,17 @@ function Contact() {
                 <div className={styles.infoIcon}>⏰</div>
                 <div>
                   <h4>Working Hours</h4>
-                  <p>Monday - Saturday: 10 AM - 8 PM IST</p>
-                  <p>Sunday: Available via WhatsApp only</p>
+                  <p>Monday - Saturday: 10 AM - 8 PM</p>
+                  <p>Flexible availability for international time zones</p>
                 </div>
               </div>
 
               <div className={styles.socialLinks}>
                 <h4>Follow Us</h4>
                 <div className={styles.socials}>
-                  <a href="https://instagram.com/digilystudio" target="_blank" rel="noopener noreferrer" className={styles.socialIcon} title="Instagram">📱</a>
+                  <a href="https://www.instagram.com/digilystudio?igsh=aW51dGtrMTNoaXN6" target="_blank" rel="noopener noreferrer" className={styles.socialIcon} title="Instagram">📱</a>
+                  <a href="https://facebook.com/digilystudio" target="_blank" rel="noopener noreferrer" className={styles.socialIcon} title="Facebook">📘</a>
                   <a href="https://linkedin.com/company/digilystudio" target="_blank" rel="noopener noreferrer" className={styles.socialIcon} title="LinkedIn">💼</a>
-                  <a href="https://twitter.com/digilystudio" target="_blank" rel="noopener noreferrer" className={styles.socialIcon} title="Twitter">🐦</a>
                 </div>
               </div>
             </div>
@@ -111,12 +111,12 @@ function Contact() {
             {/* Contact Form */}
             <div className={`${styles.formWrapper} fade-up`} style={{ transitionDelay: '100ms' }}>
               <div className={styles.formBox}>
-                <h2>Send us a Message</h2>
-                <p>Tell us about your project and we'll get back to you with a custom proposal.</p>
+                <h2>Send a Message</h2>
+                <p>Tell me about your project and I'll get back to you with a custom proposal.</p>
 
                 {submitted && (
                   <div className={styles.successMessage}>
-                    ✓ Thanks for reaching out! We'll get back to you soon.
+                    ✓ Thanks for reaching out! I'll get back to you soon.
                   </div>
                 )}
 
@@ -157,17 +157,16 @@ function Contact() {
                       required
                     >
                       <option value="website-development">Website Development</option>
-                      <option value="branding-logo">Branding & Logo Design</option>
-                      <option value="social-media">Social Media & Canva Design</option>
-                      <option value="product-images">Product Image Editing</option>
-                      <option value="video-editing">Video Editing & Promotions</option>
-                      <option value="business-identity">Business Identity Design</option>
+                      <option value="ecommerce-b2b">E-Commerce & B2B Portals</option>
+                      <option value="branding-logo">Brand Identity & Logo Design</option>
+                      <option value="ai-promotional-videos">AI Promotional Videos</option>
+                      <option value="product-images">Marketplace Product Editing</option>
                       <option value="other">Other / Multiple Services</option>
                     </select>
                   </div>
 
                   <div className={styles.formGroup}>
-                    <label htmlFor="message">Tell Us About Your Project *</label>
+                    <label htmlFor="message">Tell Me About Your Project *</label>
                     <textarea
                       id="message"
                       name="message"
@@ -184,7 +183,7 @@ function Contact() {
                   </button>
 
                   <p className={styles.formNote}>
-                    We'll review your message and get back to you within 24 hours via email or WhatsApp.
+                    I'll review your message and get back to you within 24 hours via email or WhatsApp.
                   </p>
                 </form>
               </div>
@@ -192,7 +191,6 @@ function Contact() {
           </div>
         </div>
       </section>
-
       {/* FAQ CTA */}
       <section className={`section ${styles.faqSection}`}>
         <div className="container">
@@ -218,7 +216,7 @@ function Contact() {
           <div className={`${styles.ctaBox} fade-up`}>
             <h2>Still Have Questions?</h2>
             <p>No problem! Hit us up on WhatsApp for a quick chat about your project.</p>
-            <a href="https://wa.me/919999999999" target="_blank" rel="noopener noreferrer" className="btn-whatsapp">
+            <a href="https://wa.me/919984090593" target="_blank" rel="noopener noreferrer" className="btn-whatsapp">
               💬 Chat on WhatsApp Now
             </a>
           </div>
@@ -231,27 +229,27 @@ function Contact() {
 const faqs = [
   {
     q: 'What\'s your average project timeline?',
-    a: 'Most projects take 2-4 weeks depending on scope and complexity. Rush projects are available with expedited pricing.',
+    a: 'Because I handle everything directly without agency delays, I move fast. Web development projects typically take 1 to 2 weeks, while branding and AI promotional videos are usually delivered within 2 to 4 days.',
   },
   {
     q: 'Do you offer free consultations?',
-    a: 'Yes! We offer a free 15-minute discovery call to understand your project and provide initial recommendations.',
+    a: 'Yes! I offer a quick, free chat via WhatsApp or Google Meet. We will jump straight into your project goals and figure out the fastest way to get your digital solution live.',
   },
   {
     q: 'What\'s your payment structure?',
-    a: 'We typically require 50% upfront and 50% on delivery. Custom payment plans available for larger projects.',
+    a: 'I typically require a 50% upfront deposit to secure your spot and start working immediately. The remaining 50% is due upon final delivery and successful deployment of your project.',
   },
   {
     q: 'Do you provide revisions?',
-    a: 'Absolutely! Included revisions vary by service. We\'re committed to your satisfaction.',
+    a: 'Absolutely. I want you to be completely thrilled with the final result. We will do quick, direct review rounds, and I usually turn around edits within 24 hours.',
   },
   {
-    q: 'Can you work with our existing brand guidelines?',
-    a: 'Yes! We can work within existing brand guidelines or create new ones from scratch.',
+    q: 'Will I communicate with an agency team or directly with you?',
+    a: 'You work directly with me, the founder. This means no agency middlemen, crystal-clear communication, and much faster turnaround times. You get premium work without the corporate wait times.',
   },
   {
-    q: 'What file formats do you deliver?',
-    a: 'All files in the formats you need - SVG, PNG, PDF, AI, PSD, HTML, etc. We ensure compatibility with your workflow.',
+    q: 'What exact files and formats do you deliver at the end?',
+    a: 'For web development, you get a fully deployed, live website connected to your domain, plus the clean source code. For design and videos, you receive all high-resolution files (MP4, PNG, SVG) ready for use.',
   },
 ]
 

@@ -574,3 +574,39 @@
     justify-content: center;
   }
 }
+/* ---- Portfolio Card Action Button ---- */
+.portfolioBtnWrap {
+  display: flex;
+  justify-content: center;
+  margin-top: 14px;
+}
+
+.portfolioActionBtn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 24px;
+  background: linear-gradient(135deg, #6366f1, #8b5cf6);
+  color: #fff;
+  font-size: 0.875rem;
+  font-weight: 600;
+  border-radius: 50px;
+  text-decoration: none;
+  letter-spacing: 0.01em;
+  box-shadow: 0 4px 14px rgba(99, 102, 241, 0.35);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.portfolioActionBtn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(99, 102, 241, 0.45);
+}
+
+.btnArrow {
+  font-style: normal;
+  transition: transform 0.2s ease;
+}
+
+.portfolioActionBtn:hover .btnArrow {
+  transform: translateX(3px);
+}

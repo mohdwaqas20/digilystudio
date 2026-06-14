@@ -13,114 +13,106 @@ function useScrollReveal() {
   }, [])
 }
 
+
 const allProjects = [
   {
     id: 1,
-    title: 'StyleKart E-Commerce Platform',
+    title: 'Leezoo E-Commerce Platform',
     category: 'websites',
-    description: 'Full-stack e-commerce website with product filtering, cart management, and payment integration.',
+    description: 'Custom full-stack e-commerce website built for a luxury streetwear brand. Features clean minimalist UI and responsive design.',
     image: '🛍️',
     bg: 'linear-gradient(135deg, #eef0ff, #ddd6fe)',
-    tags: ['React', 'Node.js', 'MongoDB', 'Payment Gateway'],
+    tags: ['React', 'Vite', 'Supabase', 'E-commerce'],
+    websiteLink: 'https://www.leezoo.in', 
+    postLink: '',
   },
   {
     id: 2,
-    title: 'Bloom Events Brand Identity',
-    category: 'branding',
-    description: 'Complete brand identity including logo, color palette, typography system, and brand guidelines.',
-    image: '🌸',
-    bg: 'linear-gradient(135deg, #fff0f6, #fce7f3)',
-    tags: ['Logo Design', 'Brand Guidelines', 'Color Palette'],
+    title: 'Ayat Exims',
+    category: 'websites',
+    description: 'Professional corporate website and B2B portal designed for a leather manufacturing and export company.',
+    image: '💼',
+    bg: 'linear-gradient(135deg, #f0fff4, #d1fae5)',
+    tags: ['Corporate Website', 'B2B Portal', 'Frontend Development'],
+    websiteLink: 'https://mohdwaqas20.github.io/ayat-exims/', // Replace with the actual link
+    postLink: '',
   },
   {
     id: 3,
-    title: 'FreshHarvest Amazon Listings',
-    category: 'product-images',
-    description: 'Premium product images with white background, lifestyle mockups, and feature highlights for 50+ SKUs.',
-    image: '🥗',
-    bg: 'linear-gradient(135deg, #f0fff4, #d1fae5)',
-    tags: ['Product Photography', 'Retouching', 'Amazon Optimization'],
+    title: 'Personal Developer Portfolio',
+    category: 'websites',
+    description: 'Modern developer portfolio showcasing web development projects, UI/UX skills, and technical capabilities.',
+    image: '👨‍💻',
+    bg: 'linear-gradient(135deg, #e8f4ff, #dbeafe)',
+    tags: ['Web Design', 'UI/UX', 'Frontend'],
+    websiteLink: 'https://mohdwaqas20.github.io/CodeAlpha_Portfolio_Website/#', // Replace with your portfolio link
+    postLink: '',
   },
   {
     id: 4,
-    title: 'TechFlow Promo Reel',
-    category: 'videos',
-    description: '60-second promotional video with motion graphics, color grading, and background music.',
-    image: '🎬',
-    bg: 'linear-gradient(135deg, #fffbeb, #fef3c7)',
-    tags: ['Video Editing', 'Motion Graphics', 'Color Grading'],
+    title: 'Leezoo Luxury Streetwear',
+    category: 'branding',
+    description: 'Complete brand identity focusing on a premium aesthetic, including naming, logo design, and brand guidelines.',
+    image: '✨',
+    bg: 'linear-gradient(135deg, #fff0f6, #fce7f3)',
+    tags: ['Brand Identity', 'Logo Design', 'Luxury Aesthetic'],
+    websiteLink: 'https://www.leezoo.in',
+    postLink: '',
   },
   {
     id: 5,
-    title: 'Luminary Skincare Social Pack',
-    category: 'design',
-    description: 'Complete social media design pack - 30 posts, stories, highlights, and Canva templates for 3 months.',
-    image: '✨',
-    bg: 'linear-gradient(135deg, #f5f0ff, #ede9fe)',
-    tags: ['Social Media', 'Canva Templates', 'Instagram'],
+    title: 'Product Promotional Video',
+    category: 'videos',
+    description: 'Dynamic promotional video generated using AI, transforming static product photos into engaging social media content.',
+    image: '🎬',
+    bg: 'linear-gradient(135deg, #fffbeb, #fef3c7)',
+    tags: ['AI Video', 'Social Media', 'Product Promo'],
+    websiteLink: '',
+    postLink: 'https://www.instagram.com/reel/DZKcuYgvRA5/?igsh=MXcxdzA5NDM5eTl0bw==', // Replace with your social media post link
   },
   {
     id: 6,
-    title: 'Nexus Consulting Website',
-    category: 'websites',
-    description: 'Corporate website with service showcase, team section, client testimonials, and contact forms.',
-    image: '💼',
-    bg: 'linear-gradient(135deg, #e8f4ff, #dbeafe)',
-    tags: ['Web Design', 'WordPress', 'SEO'],
+    title: 'Product Promotional Video',
+    category: 'videos',
+    description: 'High-quality promotional reel designed to capture attention and drive product sales on digital platforms.',
+    image: '🪄',
+    bg: 'linear-gradient(135deg, #f5f0ff, #ede9fe)',
+    tags: ['Video Editing', 'AI Generation', 'E-commerce'],
+    websiteLink: '',
+    postLink: 'https://www.instagram.com/reel/DZHqsWGvjvg/?igsh=Y2E0dmo4eWMyaHFw', 
   },
   {
     id: 7,
-    title: 'Urban Cafe Brand Identity',
-    category: 'branding',
-    description: 'Logo redesign, menu design, storefront signage, and social media branding for trendy cafe chain.',
-    image: '☕',
+    title: 'Product Promotional Video',
+    category: 'videos',
+    description: 'Short-form video content created to highlight product features and boost brand engagement.',
+    image: '📱',
     bg: 'linear-gradient(135deg, #fef3c7, #fed7aa)',
-    tags: ['Logo Redesign', 'Menu Design', 'Brand Collateral'],
+    tags: ['Promotional Video', 'Reels', 'Brand Awareness'],
+    websiteLink: '',
+    postLink: 'https://www.instagram.com/reel/DZFePhFPnF0/?igsh=MXJhdXcxNmFsMXc3bA==', 
   },
   {
     id: 8,
-    title: 'ElectroHub Flipkart Optimization',
-    category: 'product-images',
-    description: 'Enhanced product images for 30+ electronics with spec infographics and lifestyle compositions.',
-    image: '⚡',
-    bg: 'linear-gradient(135deg, #d1fae5, #a7f3d0)',
-    tags: ['Flipkart Listing', 'Infographics', 'Retouching'],
+    title: 'Product Promotional Video',
+    category: 'videos',
+    description: 'Visually striking product showcase video engineered to stop the scroll and convert viewers into buyers.',
+    image: '🚀',
+    bg: 'linear-gradient(135deg, #dcfce7, #bbf7d0)',
+    tags: ['AI Video', 'Product Showcase', 'Marketing'],
+    websiteLink: '',
+    postLink: 'https://www.instagram.com/reel/DZXlGyIS4V0/?igsh=emlxMDduNXhkcjRl', 
   },
   {
     id: 9,
-    title: 'Summit Fitness Video Campaign',
+    title: 'Product Promotional Video',
     category: 'videos',
-    description: 'Instagram Reels series (15 videos) for fitness brand launch campaign with trending audio.',
-    image: '💪',
+    description: 'A beautifully rendered promotional video demonstrating the product in a modern, cinematic style.',
+    image: '🎥',
     bg: 'linear-gradient(135deg, #fce7f3, #fbcfe8)',
-    tags: ['Reels Editing', 'Audio Sync', 'Social Video'],
-  },
-  {
-    id: 10,
-    title: 'DevStudio Portfolio Website',
-    category: 'websites',
-    description: 'Modern developer portfolio with project showcase, blog, and interactive skill visualization.',
-    image: '💻',
-    bg: 'linear-gradient(135deg, #e0e7ff, #dbeafe)',
-    tags: ['Web Design', 'Next.js', 'Interactive'],
-  },
-  {
-    id: 11,
-    title: 'Artisan Bakery Business Cards',
-    category: 'design',
-    description: 'Premium visiting cards, box design, and email signature for artisanal bakery business.',
-    image: '🍰',
-    bg: 'linear-gradient(135deg, #fef3c7, #fde68a)',
-    tags: ['Business Cards', 'Packaging', 'Brand Collateral'],
-  },
-  {
-    id: 12,
-    title: 'GreenLeaf Eco Brand Campaign',
-    category: 'design',
-    description: 'Comprehensive social media campaign for eco-friendly products - 60 graphics over 3 months.',
-    image: '🌱',
-    bg: 'linear-gradient(135deg, #dcfce7, #bbf7d0)',
-    tags: ['Social Media', 'Campaign Design', 'Sustainability'],
+    tags: ['Video Editing', 'Motion Content', 'Social Ads'],
+    websiteLink: '',
+    postLink: 'https://www.instagram.com/reel/DZh7T-_ynEz/?igsh=MXNuYnE5ZTZpMGx5Yg==', 
   },
 ]
 
@@ -149,11 +141,11 @@ function Portfolio() {
           <div className={`${styles.heroContent} fade-up`}>
             <span className="badge">Our Portfolio</span>
             <h1>
-              150+ Projects. 80+ Happy Clients.{' '}
-              <span className="gradient-text">Infinite Possibilities.</span>
+              Premium Digital Experiences.{' '}
+              <span className="gradient-text">Built for Growth.</span>
             </h1>
             <p>
-              From stunning websites and brand identities to captivating videos and conversion-optimized product images — here's what we've created for brands across India and Dubai.
+              We partner with growing startups and established businesses to build custom e-commerce platforms, corporate portals, and dynamic visuals that stand out.
             </p>
           </div>
         </div>
@@ -198,6 +190,30 @@ function Portfolio() {
                       <span key={tag} className={styles.tag}>{tag}</span>
                     ))}
                   </div>
+                  {(project.websiteLink || project.postLink) && (
+                    <div className={styles.projectActions}>
+                      {project.websiteLink && (
+                        <a
+                          href={project.websiteLink}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className={styles.actionBtn}
+                        >
+                          View Project <span className={styles.btnArrow}>→</span>
+                        </a>
+                      )}
+                      {project.postLink && (
+                        <a
+                          href={project.postLink}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className={styles.actionBtn}
+                        >
+                          View Project <span className={styles.btnArrow}>→</span>
+                        </a>
+                      )}
+                    </div>
+                  )}
                 </div>
               </div>
             ))}
@@ -218,7 +234,7 @@ function Portfolio() {
               }}>
                 Get a Free Quote
               </a>
-              <a href="https://wa.me/919999999999" target="_blank" rel="noopener noreferrer" className="btn-whatsapp">
+              <a href="https://wa.me/919984090593" target="_blank" rel="noopener noreferrer" className="btn-whatsapp">
                 💬 Chat on WhatsApp
               </a>
             </div>
