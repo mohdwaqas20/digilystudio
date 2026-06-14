@@ -1,0 +1,311 @@
+/* ===========================
+   DIGILY STUDIO — GLOBAL CSS
+   Design System
+=========================== */
+
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  /* Color Palette */
+  --white: #ffffff;
+  --off-white: #f8f9ff;
+  --surface: #f0f2ff;
+  --surface-2: #e8eaff;
+
+  --indigo-50: #eef0ff;
+  --indigo-100: #d5d8ff;
+  --indigo-400: #818cf8;
+  --indigo-500: #6366f1;
+  --indigo-600: #4f46e5;
+  --indigo-700: #4338ca;
+
+  --violet-400: #a78bfa;
+  --violet-500: #8b5cf6;
+  --violet-600: #7c3aed;
+
+  --sky-400: #38bdf8;
+  --sky-500: #0ea5e9;
+
+  --slate-300: #cbd5e1;
+  --slate-400: #94a3b8;
+  --slate-500: #64748b;
+  --slate-600: #475569;
+  --slate-700: #334155;
+  --slate-800: #1e293b;
+  --slate-900: #0f172a;
+
+  --green-500: #22c55e;
+  --amber-500: #f59e0b;
+
+  /* Typography */
+  --font-display: 'Poppins', sans-serif;
+  --font-body: 'Inter', sans-serif;
+
+  /* Gradients */
+  --gradient-primary: linear-gradient(135deg, #6366f1 0%, #8b5cf6 50%, #0ea5e9 100%);
+  --gradient-hero: linear-gradient(135deg, #eef0ff 0%, #f0f2ff 40%, #e8f4ff 100%);
+  --gradient-card: linear-gradient(145deg, #ffffff 0%, #f8f9ff 100%);
+  --gradient-text: linear-gradient(135deg, #4f46e5 0%, #8b5cf6 60%, #0ea5e9 100%);
+  --gradient-cta: linear-gradient(135deg, #6366f1 0%, #7c3aed 100%);
+
+  /* Shadows */
+  --shadow-xs: 0 1px 3px rgba(99,102,241,0.07);
+  --shadow-sm: 0 2px 8px rgba(99,102,241,0.10);
+  --shadow-md: 0 4px 20px rgba(99,102,241,0.13);
+  --shadow-lg: 0 8px 40px rgba(99,102,241,0.16);
+  --shadow-xl: 0 20px 60px rgba(99,102,241,0.18);
+  --shadow-card: 0 2px 16px rgba(15,23,42,0.07), 0 1px 4px rgba(99,102,241,0.06);
+
+  /* Borders */
+  --radius-sm: 8px;
+  --radius-md: 12px;
+  --radius-lg: 16px;
+  --radius-xl: 24px;
+  --radius-full: 9999px;
+
+  /* Spacing */
+  --section-py: 96px;
+  --section-py-sm: 64px;
+
+  /* Transitions */
+  --transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+  --transition-slow: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+html {
+  scroll-behavior: smooth;
+  font-size: 16px;
+}
+
+body {
+  font-family: var(--font-body);
+  background-color: var(--white);
+  color: var(--slate-800);
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-display);
+  line-height: 1.2;
+  color: var(--slate-900);
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+button {
+  cursor: pointer;
+  font-family: var(--font-body);
+  border: none;
+  outline: none;
+}
+
+input, textarea, select {
+  font-family: var(--font-body);
+  outline: none;
+}
+
+ul, ol {
+  list-style: none;
+}
+
+/* =====================
+   UTILITY CLASSES
+===================== */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+.gradient-text {
+  background: var(--gradient-text);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  background: var(--indigo-50);
+  color: var(--indigo-600);
+  font-size: 0.75rem;
+  font-weight: 600;
+  font-family: var(--font-body);
+  padding: 6px 14px;
+  border-radius: var(--radius-full);
+  border: 1px solid var(--indigo-100);
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+
+.section {
+  padding: var(--section-py) 0;
+}
+
+.section-sm {
+  padding: var(--section-py-sm) 0;
+}
+
+/* =====================
+   PAGE TRANSITIONS
+===================== */
+.page-enter {
+  animation: pageEnter 0.4s cubic-bezier(0.4, 0, 0.2, 1) forwards;
+}
+
+@keyframes pageEnter {
+  from {
+    opacity: 0;
+    transform: translateY(16px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* =====================
+   SCROLL ANIMATIONS
+===================== */
+.fade-up {
+  opacity: 0;
+  transform: translateY(32px);
+  transition: opacity 0.6s cubic-bezier(0.4,0,0.2,1), transform 0.6s cubic-bezier(0.4,0,0.2,1);
+}
+
+.fade-up.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* =====================
+   BUTTONS
+===================== */
+.btn-primary {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: var(--gradient-cta);
+  color: var(--white);
+  font-weight: 600;
+  font-size: 0.9375rem;
+  padding: 14px 28px;
+  border-radius: var(--radius-full);
+  box-shadow: 0 4px 16px rgba(99,102,241,0.35);
+  transition: var(--transition);
+  white-space: nowrap;
+}
+
+.btn-primary:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 24px rgba(99,102,241,0.45);
+}
+
+.btn-primary:active {
+  transform: translateY(0);
+}
+
+.btn-secondary {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: var(--white);
+  color: var(--indigo-600);
+  font-weight: 600;
+  font-size: 0.9375rem;
+  padding: 14px 28px;
+  border-radius: var(--radius-full);
+  border: 1.5px solid var(--indigo-100);
+  box-shadow: var(--shadow-sm);
+  transition: var(--transition);
+  white-space: nowrap;
+}
+
+.btn-secondary:hover {
+  border-color: var(--indigo-400);
+  background: var(--indigo-50);
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-md);
+}
+
+.btn-whatsapp {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  background: #25d366;
+  color: var(--white);
+  font-weight: 600;
+  font-size: 0.9375rem;
+  padding: 14px 28px;
+  border-radius: var(--radius-full);
+  box-shadow: 0 4px 16px rgba(37,211,102,0.3);
+  transition: var(--transition);
+}
+
+.btn-whatsapp:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 24px rgba(37,211,102,0.4);
+  background: #22c55e;
+}
+
+/* =====================
+   SECTION HEADERS
+===================== */
+.section-header {
+  text-align: center;
+  margin-bottom: 64px;
+}
+
+.section-header h2 {
+  font-size: clamp(1.875rem, 4vw, 2.75rem);
+  font-weight: 700;
+  margin-bottom: 16px;
+  color: var(--slate-900);
+}
+
+.section-header p {
+  font-size: 1.0625rem;
+  color: var(--slate-500);
+  max-width: 560px;
+  margin: 0 auto;
+  line-height: 1.7;
+}
+
+/* =====================
+   RESPONSIVE
+===================== */
+@media (max-width: 768px) {
+  :root {
+    --section-py: 64px;
+    --section-py-sm: 48px;
+  }
+
+  .container {
+    padding: 0 20px;
+  }
+
+  .section-header {
+    margin-bottom: 48px;
+  }
+
+  .section-header h2 {
+    font-size: 1.75rem;
+  }
+}

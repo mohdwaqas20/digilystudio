@@ -1,0 +1,164 @@
+.footer {
+  background: var(--slate-900);
+  color: var(--slate-400);
+  padding: 72px 0 0;
+  margin-top: 0;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr 1.5fr;
+  gap: 48px;
+  padding-bottom: 56px;
+  border-bottom: 1px solid rgba(255,255,255,0.06);
+}
+
+/* Brand Column */
+.brand {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.logo {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.logoIcon {
+  width: 36px;
+  height: 36px;
+}
+
+.logoText {
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: 1.25rem;
+  color: var(--white);
+  letter-spacing: -0.02em;
+}
+
+.logoAccent {
+  color: var(--indigo-400);
+}
+
+.tagline {
+  font-size: 0.9rem;
+  line-height: 1.7;
+  color: var(--slate-400);
+  max-width: 280px;
+}
+
+.social {
+  display: flex;
+  gap: 10px;
+}
+
+.socialLink {
+  width: 38px;
+  height: 38px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(255,255,255,0.06);
+  border-radius: var(--radius-sm);
+  color: var(--slate-400);
+  transition: var(--transition);
+}
+
+.socialLink:hover {
+  background: var(--indigo-600);
+  color: var(--white);
+  transform: translateY(-2px);
+}
+
+/* Columns */
+.colTitle {
+  font-family: var(--font-display);
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: var(--white);
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  margin-bottom: 20px;
+}
+
+.linkList {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.link {
+  font-size: 0.9rem;
+  color: var(--slate-400);
+  transition: var(--transition);
+}
+
+.link:hover {
+  color: var(--indigo-400);
+}
+
+.contactList {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.contactList li {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+}
+
+.contactIcon {
+  font-size: 1rem;
+  flex-shrink: 0;
+  margin-top: 1px;
+}
+
+.contactText {
+  font-size: 0.9rem;
+  color: var(--slate-400);
+}
+
+/* Bottom */
+.bottom {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 24px 0;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.copyright,
+.madeWith {
+  font-size: 0.875rem;
+  color: var(--slate-500);
+}
+
+@media (max-width: 1024px) {
+  .grid {
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+  }
+  .brand {
+    grid-column: 1 / -1;
+  }
+}
+
+@media (max-width: 640px) {
+  .grid {
+    grid-template-columns: 1fr;
+    gap: 32px;
+  }
+  .brand {
+    grid-column: auto;
+  }
+  .bottom {
+    flex-direction: column;
+    text-align: center;
+  }
+}
