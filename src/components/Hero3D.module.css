@@ -1,0 +1,19 @@
+.canvasHost {
+  width: 100%;
+  height: clamp(320px, 42vw, 520px);
+  max-width: 560px;
+  margin: 0 auto;
+  cursor: grab;
+}
+
+.canvasHost canvas {
+  display: block;
+  width: 100% !important;
+  height: 100% !important;
+}
+
+@media (max-width: 900px) {
+  .canvasHost {
+    height: 320px;
+  }
+}

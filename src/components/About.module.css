@@ -59,7 +59,7 @@
    MISSION SECTION
 ===================== */
 .missionSection {
-  background: var(--white);
+  background: var(--surface);
   padding: 80px 0;
 }
 
@@ -72,7 +72,7 @@
 }
 
 .missionCard {
-  background: linear-gradient(135deg, #ffffff 0%, #f8f9ff 100%);
+  background: linear-gradient(145deg, #17151e 0%, #1e1b28 100%);
   border-radius: var(--radius-lg);
   padding: 40px 32px;
   text-align: center;
@@ -129,7 +129,7 @@
 }
 
 .whyCard {
-  background: var(--white);
+  background: var(--surface);
   border-radius: var(--radius-lg);
   padding: 32px;
   box-shadow: var(--shadow-card);
@@ -176,7 +176,7 @@
    STATS SECTION
 ===================== */
 .statsSection {
-  background: var(--white);
+  background: var(--surface);
   padding: 80px 0;
 }
 
@@ -188,7 +188,7 @@
 }
 
 .statCard {
-  background: linear-gradient(135deg, #ffffff 0%, #f8f9ff 100%);
+  background: linear-gradient(145deg, #17151e 0%, #1e1b28 100%);
   border-radius: var(--radius-lg);
   padding: 40px 24px;
   text-align: center;
@@ -244,7 +244,7 @@
 }
 
 .processStep {
-  background: var(--white);
+  background: var(--surface);
   border-radius: var(--radius-lg);
   padding: 32px;
   text-align: center;
@@ -298,7 +298,7 @@
    TEAM SECTION
 ===================== */
 .teamSection {
-  background: var(--white);
+  background: var(--surface);
   padding: 80px 0;
 }
 
@@ -310,7 +310,7 @@
 }
 
 .teamCard {
-  background: linear-gradient(135deg, #ffffff 0%, #f8f9ff 100%);
+  background: linear-gradient(145deg, #17151e 0%, #1e1b28 100%);
   border-radius: var(--radius-lg);
   padding: 32px 24px;
   text-align: center;

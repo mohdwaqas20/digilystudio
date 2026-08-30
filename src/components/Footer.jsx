@@ -41,8 +41,8 @@ function Footer() {
                   <circle cx="14" cy="14" r="3" fill="white" />
                   <defs>
                     <linearGradient id="footerLogoGrad" x1="0" y1="0" x2="28" y2="28">
-                      <stop stopColor="#6366f1" />
-                      <stop offset="1" stopColor="#8b5cf6" />
+                      <stop stopColor="#6e6bff" />
+                      <stop offset="1" stopColor="#e8b04b" />
                     </linearGradient>
                   </defs>
                 </svg>

@@ -1,6 +1,8 @@
 import React, { useEffect, useRef } from 'react'
 import { Link } from 'react-router-dom'
 import styles from './Home.module.css'
+import Hero3D from './Hero3D'
+import { IMAGES } from '../assets/images'
 
 /* ---- Scroll animation hook ---- */
 function useScrollReveal(selector = '.fade-up') {
@@ -21,37 +23,37 @@ const services = [
     icon: '🌐',
     title: 'Custom Web Development',
     desc: 'We build complete, high-performance websites from scratch, handling both responsive front-end design and secure back-end systems.',
-    color: '#eef0ff',
+    color: '#1a1830',
   },
   {
     icon: '✨',
     title: 'Brand Naming & Logo Design',
     desc: 'We provide creative brand name suggestions and design premium, memorable logos to capture your unique business identity.',
-    color: '#f5f0ff',
+    color: '#1e1a2e',
   },
   {
     icon: '📱',
     title: 'E-commerce Setup',
     desc: 'We build secure, fully functional e-commerce platforms designed to showcase your products and drive online sales.',
-    color: '#e8f4ff',
+    color: '#131b28',
   },
   {
     icon: '📦',
     title: 'AI & Product Image Editing',
     desc: 'We create clean, white-background listing photos and use advanced AI to generate realistic model-wearing shots for your products.',
-    color: '#fff0f6',
+    color: '#241522',
   },
   {
     icon: '🎬',
     title: 'AI Video Generation',
     desc: 'Send us a standard product photo, and we will use cutting-edge AI to transform it into a stunning, dynamic promotional video.',
-    color: '#fffbeb',
+    color: '#2a2110',
   },
   {
     icon: '🎨',
     title: 'Business Identity Design',
     desc: 'We design professional visiting cards, letterheads, and brand stationery to give your business a cohesive, premium look.',
-    color: '#f0fff4',
+    color: '#10241a',
   },
 ]
 
@@ -153,7 +155,13 @@ function Home() {
             </div>
           </div>
           <div className={`${styles.heroVisual} fade-up`}>
-            <HeroIllustration />
+            <img
+              src={IMAGES.heroAbstract}
+              alt=""
+              aria-hidden="true"
+              className={styles.heroGlow}
+            />
+            <Hero3D />
           </div>
         </div>
       </section>
@@ -331,7 +339,7 @@ const portfolioItems = [
     sub: 'Custom Web Development', 
     tag: 'Web', 
     emoji: '🛒', 
-    bg: 'linear-gradient(135deg, #eef0ff, #ddd6fe)',
+    bg: 'linear-gradient(135deg, #1a1830, #241f38)',
     link: 'https://www.leezoo.in',
   },
   { 
@@ -339,7 +347,7 @@ const portfolioItems = [
     sub: 'AI Video Generation', 
     tag: 'Video', 
     emoji: '🎬', 
-    bg: 'linear-gradient(135deg, #fffbeb, #fef3c7)',
+    bg: 'linear-gradient(135deg, #2a2110, #332714)',
     link: 'https://www.instagram.com/reel/DZKcuYgvRA5/?igsh=MXcxdzA5NDM5eTl0bw==',
   },
   { 
@@ -347,7 +355,7 @@ const portfolioItems = [
     sub: 'Brand Identity & Aesthetic', 
     tag: 'Branding', 
     emoji: '✨', 
-    bg: 'linear-gradient(135deg, #fff0f6, #fce7f3)',
+    bg: 'linear-gradient(135deg, #241522, #2c1826)',
     link: 'https://www.leezoo.in',
   },
   
@@ -371,79 +379,5 @@ function WhatsAppSmall() {
   )
 }
 
-function HeroIllustration() {
-  return (
-    <div className={styles.heroIllustration}>
-      <svg viewBox="0 0 480 360" fill="none" xmlns="http://www.w3.org/2000/svg" className={styles.heroSvg}>
-        {/* Background Cards */}
-        <rect x="20" y="40" width="200" height="130" rx="16" fill="white" filter="url(#shadow1)" />
-        <rect x="260" y="20" width="200" height="100" rx="16" fill="white" filter="url(#shadow1)" />
-        <rect x="20" y="195" width="200" height="100" rx="16" fill="white" filter="url(#shadow1)" />
-        <rect x="260" y="145" width="200" height="170" rx="16" fill="white" filter="url(#shadow1)" />
-
-        {/* Card 1: Website */}
-        <rect x="36" y="60" width="168" height="8" rx="4" fill="#e8eaff" />
-        <rect x="36" y="76" width="120" height="6" rx="3" fill="#f0f2ff" />
-        <rect x="36" y="96" width="168" height="52" rx="8" fill="url(#grad1)" opacity="0.9" />
-        <text x="120" y="128" textAnchor="middle" fill="white" fontSize="11" fontFamily="Inter" fontWeight="600">Website Dev</text>
-        <text x="120" y="143" textAnchor="middle" fill="rgba(255,255,255,0.8)" fontSize="9" fontFamily="Inter">Launched 🚀</text>
-
-        {/* Card 2: Branding */}
-        <circle cx="282" cy="50" r="16" fill="url(#grad2)" />
-        <text x="282" y="55" textAnchor="middle" fill="white" fontSize="12">✨</text>
-        <rect x="306" y="40" width="136" height="8" rx="4" fill="#e8eaff" />
-        <rect x="306" y="56" width="100" height="6" rx="3" fill="#f0f2ff" />
-        <rect x="276" y="78" width="168" height="28" rx="6" fill="#f5f0ff" />
-        <text x="360" y="97" textAnchor="middle" fill="#7c3aed" fontSize="10" fontFamily="Inter" fontWeight="600">Logo Delivered ✓</text>
-
-        {/* Card 3: Product */}
-        <rect x="36" y="210" width="80" height="70" rx="8" fill="url(#grad3)" opacity="0.8" />
-        <text x="76" y="250" textAnchor="middle" fill="white" fontSize="20">🎬</text>
-        <rect x="126" y="215" width="78" height="7" rx="3" fill="#e8eaff" />
-        <rect x="126" y="230" width="60" height="6" rx="3" fill="#f0f2ff" />
-        <rect x="126" y="248" width="78" height="6" rx="3" fill="#f0f2ff" />
-        <rect x="126" y="264" width="50" height="6" rx="3" fill="#f0f2ff" />
-
-
-        {/* Card 4: Video + Social */}
-        <rect x="276" y="164" width="168" height="90" rx="10" fill="url(#grad4)" opacity="0.85" />
-        <text x="360" y="215" textAnchor="middle" fill="white" fontSize="28">📦</text>
-        <text x="360" y="240" textAnchor="middle" fill="rgba(255,255,255,0.9)" fontSize="10" fontFamily="Inter" fontWeight="600">E-commerce Setup 🛍️</text>
-
-        <rect x="276" y="270" width="168" height="30" rx="8" fill="#fff8f0" />
-        <text x="360" y="289" textAnchor="middle" fill="#d97706" fontSize="10" fontFamily="Inter" fontWeight="600">Payment Gateway Setup ★★★★★</text>
-
-        {/* Floating badges */}
-        <rect x="160" y="10" width="80" height="26" rx="13" fill="url(#grad1)" />
-        <text x="200" y="27" textAnchor="middle" fill="white" fontSize="10" fontFamily="Inter" fontWeight="600">Startups 🚀</text>
-
-        <rect x="350" y="330" width="86" height="26" rx="13" fill="url(#grad2)" />
-        <text x="393" y="347" textAnchor="middle" fill="white" fontSize="10" fontFamily="Inter" fontWeight="600">Local Brands 🏪</text>
-
-        <defs>
-          <filter id="shadow1" x="-10%" y="-10%" width="120%" height="120%">
-            <feDropShadow dx="0" dy="4" stdDeviation="8" floodColor="#6366f1" floodOpacity="0.1" />
-          </filter>
-          <linearGradient id="grad1" x1="0" y1="0" x2="1" y2="1">
-            <stop stopColor="#6366f1" />
-            <stop offset="1" stopColor="#8b5cf6" />
-          </linearGradient>
-          <linearGradient id="grad2" x1="0" y1="0" x2="1" y2="1">
-            <stop stopColor="#8b5cf6" />
-            <stop offset="1" stopColor="#0ea5e9" />
-          </linearGradient>
-          <linearGradient id="grad3" x1="0" y1="0" x2="1" y2="1">
-            <stop stopColor="#0ea5e9" />
-            <stop offset="1" stopColor="#6366f1" />
-          </linearGradient>
-          <linearGradient id="grad4" x1="0" y1="0" x2="1" y2="1">
-            <stop stopColor="#4f46e5" />
-            <stop offset="1" stopColor="#7c3aed" />
-          </linearGradient>
-        </defs>
-      </svg>
-    </div>
-  )
-}
 
 export default Home

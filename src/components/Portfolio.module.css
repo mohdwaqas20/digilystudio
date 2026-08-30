@@ -72,7 +72,7 @@
 ===================== */
 .filterSection {
   padding: 60px 0;
-  background: var(--white);
+  background: var(--surface);
 }
 
 .filterControls {
@@ -111,7 +111,7 @@
 ===================== */
 .gridSection {
   padding: 60px 0;
-  background: var(--white);
+  background: var(--surface);
 }
 
 .projectsGrid {
@@ -122,7 +122,7 @@
 }
 
 .projectCard {
-  background: var(--white);
+  background: var(--surface);
   border-radius: var(--radius-lg);
   overflow: hidden;
   box-shadow: var(--shadow-card);
@@ -154,6 +154,15 @@
 .projectEmoji {
   font-size: 3.5rem;
   z-index: 2;
+}
+
+.projectImg {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: absolute;
+  inset: 0;
+  z-index: 1;
 }
 
 .projectBadge {

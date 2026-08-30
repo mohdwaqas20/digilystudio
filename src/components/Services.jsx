@@ -30,7 +30,7 @@ const services = [
       'Custom database integration',
     ],
     useCases: ['Business Portfolios', 'Startup Landing Pages', 'E-commerce Websites', 'Custom Websites'],
-    color: '#eef0ff',
+    color: '#1a1830',
     accent: '#6366f1',
   },
   {
@@ -47,7 +47,7 @@ const services = [
       'Full commercial ownership rights',
     ],
     useCases: ['New business launches', 'Startup branding', 'Company rebrands', 'Product line identities'],
-    color: '#f5f0ff',
+    color: '#1e1a2e',
     accent: '#8b5cf6',
   },
   {
@@ -64,7 +64,7 @@ const services = [
       'Order and inventory tracking setup',
     ],
     useCases: ['Clothing Brands', 'Digital Stores', 'B2B Wholesale', 'Local Shops'],
-    color: '#e8f4ff',
+    color: '#131b28',
     accent: '#0ea5e9',
   },
   {
@@ -81,7 +81,7 @@ const services = [
       'High-conversion visual appeal',
     ],
     useCases: ['E-commerce product pages', 'Amazon/Flipkart listings', 'Apparel lookbooks', 'Social media showcases'],
-    color: '#fff0f6',
+    color: '#241522',
     accent: '#ec4899',
   },
   {
@@ -98,7 +98,7 @@ const services = [
       'Fast turnaround times for campaigns',
     ],
     useCases: ['Instagram Reels & TikToks', 'Product launch teasers', 'Website hero backgrounds', 'Digital ad campaigns'],
-    color: '#fffbeb',
+    color: '#2a2110',
     accent: '#f59e0b',
   },
   {
@@ -115,7 +115,7 @@ const services = [
       'Consistent visual identity across physical media',
     ],
     useCases: ['Networking events', 'Client presentations', 'Corporate communications', 'Physical retail packaging'],
-    color: '#f0fff4',
+    color: '#10241a',
     accent: '#22c55e',
   },
 ]
